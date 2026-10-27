@@ -1,0 +1,47 @@
+1. What is HTTP?
+HTTP (Hypertext Transfer Protocol) is a set of rules that allows a client, such as a browser, and a web server to communicate.
+How it works
+1.	The user enters a website URL.
+2.	The browser sends an HTTP request to the server.
+3.	The server processes the request.
+4.	The server sends an HTTP response.
+5.	The browser displays the result.
+2. What is HTTPS?
+HTTPS (Hypertext Transfer Protocol Secure) is HTTP secured using TLS (Transport Layer Security).
+It works like HTTP, but protects communication by encrypting data in transit,
+ checking its integrity, and helping verify the server's identity.
+
+Why do we use HTTPS when HTTP already exists?
+HTTP allows a browser and a server to communicate with each other.
+ However, HTTP does not encrypt data in transit. If someone intercepts the network traffic, 
+ they may be able to read or modify the data.
+Real-life example
+Imagine you are booking an appointment on a hospital website.
+
+If the website uses HTTP:
+
+•	You enter your name and phone number.
+•	Your data travels without encryption.
+•	An attacker who intercepts the traffic may be able to read your personal information.
+If the website uses HTTPS:
+
+•	Your information is encrypted using TLS while travelling between your browser and the server.
+•	An attacker who intercepts the traffic generally cannot read the original information.
+•	Unauthorized modifications to the data in transit can be detected.
+
+Why was HTTP created?
+
+HTTP was designed to provide rules for communication between browsers and web servers. However,
+ secure communication also requires encryption, integrity protection, and authentication.
+  HTTPS provides these protections through TLS.
+Difference between HTTP and HTTPS
+HTTP	HTTPS
+Does not encrypt data in transit	Encrypts data in transit using TLS
+Intercepted data may be readable	Intercepted data is generally unreadable
+Default port: 80	Default port: 443
+Not suitable for sensitive data without additional protection	Recommended for modern websites and APIs
+
+Interview answer
+HTTP is used for communication between a browser and a server, but it does not encrypt data in transit. 
+HTTPS uses TLS to encrypt communication, protect data from tampering, and help verify the server's identity.
+ That is why we use HTTPS instead of HTTP for modern websites, especially when handling sensitive information.
